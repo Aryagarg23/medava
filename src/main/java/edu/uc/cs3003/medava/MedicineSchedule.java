@@ -1,22 +1,17 @@
 package edu.uc.cs3003.medava;
 
 public enum MedicineSchedule {
-    // Enumeration
     One(1),
     Two(2),
     Three(3),
     Four(4),
     Five(5),
     Uncontrolled(6);
-
-    // Schedule class attribute
     private int mSchedule;
 
     private MedicineSchedule(int Schedule) {
         mSchedule = Schedule;
     }
-
-    // Converting integer enums to strings
     public String asString() {
         switch(mSchedule) {
             case 1:
